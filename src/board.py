@@ -58,8 +58,8 @@ class Board:
 
         if debug is True:
             self.debug = debug
-            light_squares = []
-            dark_squares = []
+            self.light_squares = []
+            self.dark_squares = []
 
         self.root.title("Spichess")
         self.canvas = Canvas(

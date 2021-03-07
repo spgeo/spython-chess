@@ -1,8 +1,12 @@
+import simpleaudio as sa
+
 class DragHandler:
 
     drag_data = {"element": None, "x": 0, "y": 0}
     canvas = None
     scale_range = 0
+    dropoff_sound_file = '../audio/Button-SoundBible.com-1420500901.wav'
+    dropoff_sound = sa.WaveObject.from_wave_file(dropoff_sound_file)
 
     def __init__(self, scale_range):
         self.scale_range = scale_range
@@ -42,6 +46,7 @@ class DragHandler:
             self.find_closest_scale_range(self.drag_data["x"]),
             self.find_closest_scale_range(self.drag_data["y"])
         )
+        self.dropoff_sound.play()
 
         # Reset the drag data
         self.drag_data["element"] = None

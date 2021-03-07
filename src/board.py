@@ -14,7 +14,7 @@ class Board:
 
     root = Tk()
     scale_weight = 2
-    scale_range = 50 * scale_weight
+    scale_range = 25 * scale_weight
     num_rows = 8
     num_columns = 8
 
@@ -139,5 +139,4 @@ class Board:
         print(self.elements)
 
 
-if __name__ == '__main__':
-    board = Board()
+

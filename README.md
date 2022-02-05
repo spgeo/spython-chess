@@ -1,6 +1,6 @@
-# Spichess
+# Spython Chess
 
-Spichess is a Python app implementing a simple chess board UI.
+Spython Chess is a Python app implementing a simple chess board UI.
 
 ## Install dependencies
 
